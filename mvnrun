@@ -5,7 +5,8 @@ pipeline{
   
   stage ('complie') {
   steps {
-  sh 'mvn -B clean package'
+  sh 'javac ItemServiceTest.java'
+  sh 'java ItemService'
   }
   
   }
