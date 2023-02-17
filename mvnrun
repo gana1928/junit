@@ -3,7 +3,7 @@ pipeline{
   stages {
   stage ('build') {
   steps{
-  git branch:'main',
+  git branch:'master',
   url:'/var/lib/jenkins/workspace/junit/'
   credentialsId:'0027'
   }
