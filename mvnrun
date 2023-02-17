@@ -2,6 +2,11 @@ pipeline{
   agent any
   stages {
   stage ('build') {
+  steps{
+  git branch:'main',
+  url:'/var/lib/jenkins/workspace/junit/'
+  credentialsId:'0027'
+  }
   steps {
   sh 'mvn -B clean package'
   }
